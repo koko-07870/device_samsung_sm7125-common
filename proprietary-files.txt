@@ -864,7 +864,6 @@ vendor/etc/public.libraries.txt
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qrtr-ns
-vendor/bin/ssr_setup
 vendor/lib/libdsutils.so
 vendor/lib64/libdsutils.so
 vendor/lib/libqmi.so

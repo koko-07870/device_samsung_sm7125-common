@@ -112,6 +112,9 @@ dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 dalvik.vm.lockprof.threshold=500
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.sf.hw=0
 debug.egl.hw=0

@@ -97,6 +97,11 @@ on post-fs
     setrlimit 8 67108864 67108864
     write /dev/ipa 1
 
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     mount_all --late

@@ -178,6 +178,9 @@ renderthread.skia.reduceopstasksplitting=true
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
+# Incremental FS
+ro.incremental.enable=true
+
 # Fingerprint
 ro.vendor.fingerprint.request_touch_event=true
 ro.vendor.fingerprint.type=udfps_optical

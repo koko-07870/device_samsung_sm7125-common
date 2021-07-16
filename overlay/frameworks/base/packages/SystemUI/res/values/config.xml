@@ -23,6 +23,9 @@
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
+    <!-- Whether usage of the proximity sensor during doze is supported -->
+    <bool name="doze_proximity_sensor_supported">false</bool>
+
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">8dp</dimen>
 

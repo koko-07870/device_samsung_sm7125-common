@@ -4,6 +4,10 @@ ro.vendor.qti.va_aosp.support=1
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
+# IOP
+vendor.iop.enable_prefetch_ofr=1
+vendor.iop.enable_uxe=1
+
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
 

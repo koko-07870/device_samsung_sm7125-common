@@ -144,6 +144,7 @@ vendor.display.disable_dynamic_fps=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 debug.sf.disable_gl_backpressure=1
+debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.has_wide_color_display=true

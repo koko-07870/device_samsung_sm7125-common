@@ -383,7 +383,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor \
+    android.hardware.thermal@2.0-service.qti \
     android.frameworks.cameraservice.service@2.1.vendor \
     libcamera_metadata.vendor
 

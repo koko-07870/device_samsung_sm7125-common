@@ -438,13 +438,3 @@ service smcinvoked /system/bin/smcinvoked
     class main
     user system
     group system
-
-service dcvs-sh /vendor/bin/init.qti.dcvs.sh
-    class late_start
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:vendor.dcvs.prop=1
-   start dcvs-sh

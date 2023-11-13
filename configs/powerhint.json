@@ -93,8 +93,10 @@
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "40",
-        "10"
+        "10",
+        "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -397,6 +399,12 @@
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",

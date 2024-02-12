@@ -168,7 +168,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
 
 PRODUCT_PACKAGES += \
-    libsdmcore-shim
+    hwcomposer.qcom
 
 # fastbootd
 PRODUCT_PACKAGES += \

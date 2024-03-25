@@ -214,6 +214,10 @@ on charger
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
+on property:sys.boot_completed=1
+    # Disable statsd service to prevent additional battery drain
+    stop statsd
+
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 

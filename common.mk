@@ -362,7 +362,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    libxml2 \
     libnetutils.vendor:64 \
     librilutils \
     libsqlite.vendor:64 \

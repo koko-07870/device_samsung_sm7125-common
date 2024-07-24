@@ -1416,4 +1416,7 @@
 
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">false</bool>
+
+    <!-- Disables pocket mode lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>

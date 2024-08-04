@@ -40,4 +40,7 @@
 
     <!-- Whether to show the Preference for Adaptive connectivity -->
     <bool name="config_show_adaptive_connectivity">false</bool>
+
+    <!-- Show Force LTE_CA toggle -->
+    <bool name="config_showForceLteCaToggle" translatable="false">true</bool>
 </resources>

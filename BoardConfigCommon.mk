@@ -166,7 +166,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/configs/framework_compatibility_matrix.xml \
     hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/aosp/config/device_framework_matrix.xml
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true

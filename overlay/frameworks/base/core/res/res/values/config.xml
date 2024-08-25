@@ -1372,11 +1372,8 @@
     </integer-array>
 
     <!-- Refresh rate configs -->
-    <integer name="config_defaultFixedOnPeakRefreshRate">0</integer>
-    <integer name="config_defaultMinRefreshRate">60</integer>
-    <integer name="config_defaultPeakRefreshRate">90</integer>
     <integer name="config_defaultRefreshRate">0</integer>
-    <integer name="config_defaultRefreshRateInZone">90</integer>
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">false</bool>
@@ -1435,7 +1432,7 @@
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
          If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">

@@ -1398,9 +1398,6 @@
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
-    <!-- The default peak refresh rate. -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
-
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>

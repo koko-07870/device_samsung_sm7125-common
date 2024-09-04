@@ -1456,7 +1456,7 @@
     <!-- Vibrator pattern for feedback when selecting a day/month/year date of a Calendar -->
     <integer-array name="config_calendarDateVibePattern">
         <item>125</item>
-        <item>30</item>
+        <item>40</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
@@ -1472,9 +1472,9 @@
     <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
     <integer-array name="config_scrollBarrierVibePattern">
         <item>0</item>
+        <item>80</item>
         <item>40</item>
-        <item>10</item>
-        <item>10</item>
+        <item>40</item>
     </integer-array>
 
     <!-- If this is true, device supports Sustained Performance Mode. -->

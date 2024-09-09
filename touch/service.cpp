@@ -21,7 +21,6 @@
 #include <hidl/HidlTransportSupport.h>
 
 #include "GloveMode.h"
-#include "TouchscreenGesture.h"
 
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
@@ -30,11 +29,9 @@ using android::status_t;
 using android::OK;
 
 using ::vendor::lineage::touch::V1_0::samsung::GloveMode;
-using ::vendor::lineage::touch::V1_0::samsung::TouchscreenGesture;
 
 int main() {
     sp<GloveMode> gloveMode;
-    sp<TouchscreenGesture> touchscreenGesture;
     status_t status;
 
     LOG(INFO) << "Touch HAL service is starting.";
@@ -45,12 +42,6 @@ int main() {
         goto shutdown;
     }
 
-    touchscreenGesture = new TouchscreenGesture();
-    if (touchscreenGesture == nullptr) {
-        LOG(ERROR) << "Can not create an instance of Touch HAL TouchscreenGesture Iface, exiting.";
-        goto shutdown;
-    }
-
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
     if (gloveMode->isSupported()) {
@@ -58,15 +49,6 @@ int main() {
         if (status != OK) {
             LOG(ERROR) << "Could not register service for Touch HAL GloveMode Iface (" << status
                        << ")";
-            goto shutdown;
-        }
-    }
-
-    if (touchscreenGesture->isSupported()) {
-        status = touchscreenGesture->registerAsService();
-        if (status != OK) {
-            LOG(ERROR) << "Could not register service for Touch HAL TouchscreenGesture Iface ("
-                       << status << ")";
             goto shutdown;
         }
     }

@@ -23,7 +23,6 @@ cc_binary {
     local_include_dirs: ["include"],
     srcs: [
         "GloveMode.cpp",
-        "TouchscreenGesture.cpp",
         "service.cpp"
     ],
     shared_libs: [

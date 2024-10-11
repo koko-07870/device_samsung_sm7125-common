@@ -89,16 +89,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 1,
-      "ResetOnInit": true
-    },
-    {
         "Name": "TouchscreenEnable",
         "Path": "/sys/class/sec/tsp/input/enabled",
         "Values": [
@@ -153,6 +143,24 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CPUBWSampleMs",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms",
+      "Values": [
+        "10",
+        "4"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWIOPercent",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+      "Values": [
+        "68",
+        "34"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "CPUBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
       "Values": [
@@ -173,11 +181,47 @@
       "ResetOnInit": true
     },
     {
+      "Name": "LLCCBWSampleMs",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms",
+      "Values": [
+        "10",
+        "4"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "LLCCBWHistMemory",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hist_memory",
+      "Values": [
+        "0",
+        "20"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "LLCCBWHystLength",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hyst_length",
+      "Values": [
+        "0",
+        "10"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "L3LittleClusterMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq",
       "Values": [
         "1459200000",
         "300000000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "LLCCBWHystTriggerCount",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hyst_trigger_count",
+      "Values": [
+        "0",
+        "3"
       ],
       "ResetOnInit": true
     },
@@ -254,12 +298,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "1248000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
@@ -374,12 +412,6 @@
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",

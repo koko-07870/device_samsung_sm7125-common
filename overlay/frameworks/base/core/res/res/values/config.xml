@@ -1394,9 +1394,6 @@
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">false</bool>
 
-    <!-- Disables pocket mode lock -->
-    <bool name="config_pocketModeSupported">false</bool>
-
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
@@ -1500,7 +1497,4 @@
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
-
-    <!-- Display color inversion availability -->
-    <bool name="config_displayInversionAvailable">false</bool>
 </resources>

@@ -353,7 +353,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libxml2 \
+    libnetutils.vendor:64 \
     librilutils \
+    libsqlite.vendor:64 \
     librmnetctl \
     secril_config_svc \
     sehradiomanager \

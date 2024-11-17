@@ -103,6 +103,9 @@ ro.soc.model=SM7125
 ro.crypto.metadata_init_delete_all_keys.enabled=false
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+## APK Verity
+ro.apk_verity.mode=2
+
 # Dalvik VM
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapstartsize=8m

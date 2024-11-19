@@ -906,6 +906,7 @@ vendor/bin/adpl
 vendor/bin/ipacm-diag
 vendor/bin/tftp_server
 vendor/bin/rmt_storage
+vendor/bin/ssr_setup
 vendor/etc/init/netmgrd.rc
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml

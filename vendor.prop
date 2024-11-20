@@ -42,6 +42,7 @@ aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 vendor.audio.enable.mirrorlink=false
 persist.vendor.audio.voicecall.speaker.stereo=true
+ro.audio.monitorRotation=true
 vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.compr_voip.enable=true

@@ -7,6 +7,10 @@ fs_mgr.overlayfs.prefer_cache_backing_storage=true
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 

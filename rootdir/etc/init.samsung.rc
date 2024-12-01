@@ -169,6 +169,9 @@ on post-fs
     chmod 0771 /spu
     restorecon /spu
 
+on post-fs-data
+    mkdir /data/vendor/gatekeeper 0770 system system
+
 on boot
     # Permissions for Touchscreen
     chown system system /sys/class/sec/tsp/cmd
@@ -359,3 +362,10 @@ service goodixd /vendor/bin/goodixfingerprintd
     class late_start
     user system
     group media_rw system
+
+service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    interface android.hardware.gatekeeper@1.0::IGatekeeper default
+    override
+    class hal
+    user system
+    group system 5678

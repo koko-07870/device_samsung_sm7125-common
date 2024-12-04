@@ -1498,9 +1498,6 @@
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
-    <!-- Determines whether the shell features all run on another thread. -->
-     <bool name="config_enableShellMainThread">true</bool>
-
     <!--Useful if you want to improve signal reception -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 

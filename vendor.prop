@@ -176,9 +176,6 @@ debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 
-# GFX
-ro.config.avoid_gfx_accel=true
-
 # Fingerprint
 ro.vendor.fingerprint.request_touch_event=true
 ro.vendor.fingerprint.type=udfps_optical

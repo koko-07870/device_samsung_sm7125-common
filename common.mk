@@ -200,6 +200,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
+    libsuspend \
     charger_res_images_vendor
 
 # Health

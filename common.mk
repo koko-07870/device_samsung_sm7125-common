@@ -57,8 +57,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.early_boot.sh
+    init.qcom.sh
 
 # Audio
 PRODUCT_PACKAGES += \

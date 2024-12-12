@@ -19,7 +19,6 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/sm7125-common',
 ]
 
 

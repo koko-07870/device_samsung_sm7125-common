@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     init.samsung.display.rc \
     init.samsung.rc \
     init.samsung.power.rc \
+    init.qcom.power.rc \
     init.fingerprint.rc \
     init.ramplus.rc \
     init.target.rc \
@@ -56,7 +57,6 @@ PRODUCT_PACKAGES += \
 # Vendor scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sh
 
 # Audio

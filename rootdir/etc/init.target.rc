@@ -140,8 +140,6 @@ on boot
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 
-    setprop vendor.powerhal.init 1
-
 # for WIFI MAC address
     mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
     chown wifi wifi /mnt/vendor/efs/wifi/.mac.info

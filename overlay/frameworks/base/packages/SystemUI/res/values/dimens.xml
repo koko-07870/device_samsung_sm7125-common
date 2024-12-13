@@ -28,7 +28,7 @@
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">8dp</dimen>
 
-    <dimen name="status_bar_padding_start">5dp</dimen>
-    <dimen name="status_bar_padding_end">5dp</dimen>
+    <dimen name="status_bar_padding_start">7dp</dimen>
+    <dimen name="status_bar_padding_end">6dp</dimen>
 </resources>
 

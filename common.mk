@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
 # Vendor scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.sh
+    init.qcom.sh \
+    init.perf.sm7125.sh
 
 # Audio
 PRODUCT_PACKAGES += \

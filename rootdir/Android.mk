@@ -190,3 +190,11 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := bin/init.qcom.sh
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/bin
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.perf.sm7125.sh
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.perf.sm7125.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/bin
+include $(BUILD_PREBUILT)

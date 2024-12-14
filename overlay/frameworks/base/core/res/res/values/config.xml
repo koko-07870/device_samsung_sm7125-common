@@ -1402,6 +1402,9 @@
     <integer name="config_defaultRefreshRate">0</integer>
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
+    <!-- Default refresh rate while the device has high brightness mode enabled for HDR. -->
+    <integer name="config_defaultRefreshRateInHbmHdr">60</integer>
+
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">false</bool>
 

@@ -1405,9 +1405,6 @@
     <!-- Default refresh rate while the device has high brightness mode enabled for HDR. -->
     <integer name="config_defaultRefreshRateInHbmHdr">60</integer>
 
-    <!-- Display color inversion availability -->
-    <bool name="config_displayInversionAvailable">false</bool>
-
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->

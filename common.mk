@@ -150,8 +150,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.display.config@2.0.vendor \
-    AdvancedDisplay
+    vendor.display.config@2.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -170,14 +169,6 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -229,10 +220,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     libkeymaster4_1support.vendor
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm7125
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -385,9 +372,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1.vendor \
     libcamera_metadata.vendor
 
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.sm7125
+$(call soong_config_set,qti_thermal,netlink,false)
 
 # Vendor service manager
 PRODUCT_PACKAGES += \

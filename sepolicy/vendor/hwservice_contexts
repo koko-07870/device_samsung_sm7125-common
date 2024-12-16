@@ -11,3 +11,6 @@ vendor.samsung.hardware.gnss::ISehGnss                                          
 vendor.samsung.hardware.radio.bridge::ISehBridge                                            u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio::ISehRadio                                                    u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio.channel::ISehChannel                                          u:object_r:hal_telephony_hwservice:s0
+
+# fastcharge
+vendor.lineage.fastcharge::IFastCharge                                                      u:object_r:hal_lineage_fastcharge_hwservice:s0

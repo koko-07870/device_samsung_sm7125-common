@@ -6,3 +6,6 @@ attribute rw_fs_type;
 
 # Tag for read/execute filesystem type
 attribute rx_fs_type;
+
+hal_attribute_lineage(lineage_fastcharge)
+

@@ -50,8 +50,6 @@ on init
     chown system system /dev/stune/foreground-boost
     chown system system /dev/stune/foreground-boost/tasks
     chmod 0664 /dev/stune/foreground-boost/tasks
-    write /dev/stune/foreground-boost/schedtune.sched_boost_no_override 1
-    chown system system /dev/stune/foreground/schedtune.sched_boost_no_override
 
 # foreground-boost
     mkdir /dev/cpuset/foreground-boost

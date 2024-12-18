@@ -406,7 +406,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
 
 on property:vendor.post_boot.parsed=1
     # Setup permission for powerHAL
-    chown system system /dev/stune/top-app/schedtune.boost
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
     chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq

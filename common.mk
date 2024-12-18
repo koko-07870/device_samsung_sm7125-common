@@ -372,6 +372,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1.vendor \
     libcamera_metadata.vendor
 
+$(call soong_config_set,qti_thermal,netlink,false)
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager

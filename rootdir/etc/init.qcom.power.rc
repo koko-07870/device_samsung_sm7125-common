@@ -124,7 +124,8 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_task_unfilter_period 20000000
 
     # Uclamp tunings
-    setprop kernel.sched_util_clamp_min_rt_default 500
+    setprop kernel.sched_util_clamp_min_rt_default 96
+    setprop kernel.sched_util_clamp_min 128
 
     #top-app
     write /dev/cpuset/top-app/uclamp.max max

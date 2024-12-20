@@ -271,15 +271,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "ForegroundCpuset",
-      "Path": "/dev/cpuset/foreground/cpus",
-      "Values": [
-        "0-5",
-        "0-5,7"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -373,12 +364,6 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
       "Value": "2929"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "ForegroundCpuset",
-      "Duration": 3000,
-      "Value": "0-5"
     },
     {
       "PowerHint": "LAUNCH",

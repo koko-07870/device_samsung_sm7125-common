@@ -60,6 +60,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampFgMin",
+      "Path": "/dev/cpuset/foreground/uclamp.min",
+      "Values": [
+        "0",
+        "50"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
       "Name": "CPUBigClusterUpRateLimit",
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us",
       "Values": [
@@ -369,6 +379,12 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
       "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampFgMin",
+      "Duration": 3000,
+      "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",

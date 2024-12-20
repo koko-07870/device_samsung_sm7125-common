@@ -135,7 +135,6 @@ on property:sys.boot_completed=1
 
     #foreground
     write /dev/cpuset/foreground/uclamp.max 50
-    write /dev/cpuset/foreground/uclamp.min 0
     write /dev/cpuset/foreground/uclamp.boosted 0
     write /dev/cpuset/foreground/uclamp.latency_sensitive 0
 

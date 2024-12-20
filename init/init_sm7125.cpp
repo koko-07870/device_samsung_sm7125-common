@@ -6,6 +6,7 @@
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/sysinfo.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
@@ -33,6 +34,19 @@ void property_override_quad(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
     property_override(product_prop, value);
     property_override(odm_prop, value);
+}
+
+void load_dalvik_properties() {
+    struct sysinfo sys;
+
+    sysinfo(&sys);
+    if (sys.totalram < 4096ull * 1024 * 1024) {
+        // from - phone-xhdpi-4096-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "8m");
+        property_override("dalvik.vm.heapgrowthlimit", "192m");
+        property_override("dalvik.vm.heapmaxfree", "16m");
+	property_override("dalvik.vm.heaptargetutilization", "0.6");
+    }
 }
 
 void vendor_load_properties()

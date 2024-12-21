@@ -149,7 +149,7 @@ $(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
 TARGET_KEYMASTER_VARIANT := samsung
 
 # FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.sm7125
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/samsung:libudfps_extension.samsung
 TARGET_USES_FOD_ZPOS := true
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
 TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true

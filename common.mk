@@ -471,6 +471,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung-ext/interfaces \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/samsung
 
 # Prop files

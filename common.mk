@@ -22,7 +22,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Partitions
-PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
